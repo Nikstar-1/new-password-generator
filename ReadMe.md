@@ -5,8 +5,16 @@ Password Generator is an application that an employee can use to generate a rand
 Users can easily generate a password when they want to access sensitive data.
 
 # How to access?
-The website can be found at the following address: 
+The website can be found at the following address: https://nikstar-1.github.io/new-password-generator/.
 
+
+## Screenshots
+
+!["Start Page"](images/MainScreen.png "Start page.")
+
+!["Start Page"](images/FirstPrompt.png "Start page.")
+
+!["Start Page"](images/FinalPassword.png "Start page.")
 
 ## User Story
 AS AN employee with access to sensitive data
