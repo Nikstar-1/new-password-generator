@@ -23,6 +23,31 @@ function generatePassword() {
       alert("You must choose at least one parameter");
       return "You need to select at least one of the criteria for your password!";
     }
+
+    var charactersForPassword = []; 
+    var finalPassword = []; 
+
+    if (confirmNumbers === true){
+        charactersForPassword = charactersForPassword.concat(numbers); 
+        finalPassword.push(numbers[Math.floor(Math.random() * numbers.length)])
+    }
+
+    if (confirmLower === true){
+        charactersForPassword = charactersForPassword.concat(lower); 
+        finalPassword.push(lower[Math.floor(Math.random() * lower.length)])
+    }
+
+    if (confirmUpper === true){
+        charactersForPassword = charactersForPassword.concat(upper); 
+        finalPassword.push(upper[Math.floor(Math.random() * upper.length)])
+    }
+
+    if (confirmSpecial === true){
+        charactersForPassword = charactersForPassword.concat(special); 
+        finalPassword.push(special[Math.floor(Math.random() * special.length)])
+    }
+
+    return finalPassword.join('');
 }
 
 
