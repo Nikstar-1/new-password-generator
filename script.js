@@ -47,6 +47,9 @@ function generatePassword() {
         finalPassword.push(special[Math.floor(Math.random() * special.length)])
     }
 
+    while(finalPassword.length < lengthOfPassword){
+        finalPassword.push(charactersForPassword[Math.floor(Math.random() * charactersForPassword.length)])
+    }
     return finalPassword.join('');
 }
 
