@@ -21,7 +21,11 @@ function generatePassword() {
     var confirmSpecial = confirm ("click OK to confirm if you would like to include special characters");
     while(confirmUpper === false && confirmLower === false && confirmSpecial === false && confirmNumbers === false) {
       alert("You must choose at least one parameter");
+      return "You need to select at least one of the criteria for your password!";
     }
+}
+
+
 
 
 // Assignment Code
@@ -31,17 +35,12 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-function copied() {	
-    document.getElementById("password").select();
-    document.execCommand("copy");
-    alert("The password has been copied to your clipboard!");
-     }
+
     
-    }
+    
