@@ -70,5 +70,14 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+function copied() {	
+  var textArea = document.getElementById("password").select();
+  if(textArea === ""){
+    console.log("No password to copy yet as area is blank!!!")
+  }else{  
+    document.execCommand("copy");
+    document.querySelector('#passClipoard').style.display = "block"
+  }   
+}
     
     
